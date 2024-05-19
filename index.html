@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>goit-js-hw-11</title>
 
     <link
       rel="stylesheet"
@@ -21,45 +21,26 @@
     />
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-a3170daf.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8c59ed88.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-7453b164.css">
   </head>
   <body>
-    <header>
-  <h2 class="header">header</h2>
-</header>
-
-    <main>
-      <section>
-  <h1 class="section1">Section1</h1>
-</section>
-
-      <section>
-  <h2 class="section2">Section2</h2>
-</section>
-
-      <section>
-  <h2 class="section3">Section3</h2>
-</section>
-
-      <section>
-  <h2 class="section4">Section4</h2>
-</section>
-
-      <section>
-  <h2 class="section5">Section5</h2>
-</section>
-
-      <section>
-  <h2 class="section6">Section6</h2>
-</section>
-
-    </main>
-    <footer>
-  <h2 class="footer">footer</h2>
-</footer>
-
-    <h2 class="menu">menu</h2>
-
+    <form id="searchForm" class="form" autocomplete="off">
+      <label>
+        <input
+          class="input-search"
+          type="text"
+          name="searchInput"
+          placeholder="Search images..."
+          autofocus
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+    <div id="imageResults"></div>
+    <ul class="gallery"></ul>
+    <div class="loader"></div>
     
   </body>
 </html>
