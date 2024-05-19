@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>goit-js-hw-11</title>
 
     <link
       rel="stylesheet"
@@ -22,17 +22,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="partials/header.html" />
-    <main>
-      <load src="partials/section1.html" />
-      <load src="partials/section2.html" />
-      <load src="partials/section3.html" />
-      <load src="partials/section4.html" />
-      <load src="partials/section5.html" />
-      <load src="partials/section6.html" />
-    </main>
-    <load src="partials/footer.html" />
-    <load src="partials/menu-window.html" />
+    <form id="searchForm" class="form" autocomplete="off">
+      <label>
+        <input
+          class="input-search"
+          type="text"
+          name="searchInput"
+          placeholder="Search images..."
+          autofocus
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+    <div id="imageResults"></div>
+    <ul class="gallery"></ul>
+    <div class="loader"></div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

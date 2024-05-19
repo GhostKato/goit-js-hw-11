@@ -4,27 +4,41 @@
   | default @import url()
   |============================
 */
-@import url('./global.css');
 @import url('./reset.css');
-@import url('./header.css');
-@import url('./section1.css');
-@import url('./section2.css');
-@import url('./section3.css');
-@import url('./section4.css');
-@import url('./section5.css');
-@import url('./section6.css');
-@import url('./footer.css');
-@import url('./menu-window.css');
+@import url('./pixabay.css');
 
 :root {
-  font-family: Inter Tight, sans-serif;
+  font-family: 'Montserrat', sans;
 
-  color: #141414;
-  background-color: #fbfbfb;
+  color: #2e2f42;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.loader {
+  display: none;
+  width: 80px;
+  height: 80px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  border-right: 8px solid #f39c12;
+  border-bottom: 8px solid #3498db;
+  border-left: 8px solid #f39c12;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
